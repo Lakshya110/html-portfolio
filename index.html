@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdeliver.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/.58a810656e.js" crossorigin="anonymous"></script>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+<script>
+    //
+//     var typeData = new Typed(".role", {
+//     strings: [
+//         "Web Developer",
+//         "UI-UX Designer",
+//         "Coder",
+//     ],
+//     loop: true,
+//     typeSpeed: 100,
+//     backSpeed: 80,
+//     backDelay: 1000,
+// }); 
+// document.getElementsByClassName(".role").innerHTML += typeData.charAt(i);
+debugger;
+var i = 0;
+var txt = "hello"; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementsByClassName(".role").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+</script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="logo1.png" class="loggo">
+                    <div class="logo-text">akshya Agrawal</div>
+                </div>
+                <div class="nav-items">
+                    <div ><a href="#projects">Projects</a></div>
+                    <div ><a href="#Skills">Skills</a></div>
+                    <div ><a href="#Contactme">Contact Me</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="faded-text">Lakshya Agrawal</div>
+            <div class="hero-section-left">
+                <div class="hero-section-heading">Hi! Lakshya Agrawal</div>
+                <div class="hero-section-heading hero-section-subheading">
+                    I am a Web Developer<span class="role"
+                    style="color: black;"></span>
+                </div>
+                <div class="hero-section-description">
+                    I'm a software developer and here is my portfolio website. Here you'll learn about my 
+                    journey as a software developer. 
+                </div>
+                <div class="btn-pink" id="btn">Hire me</div>
+            </div>
+            <div class="hero-section-right">
+                <div class="absolute icons icon-dots">
+                    <img src="icondots.png" alt=""/>
+                </div>
+                <div class="absolute icons icon-cube">
+                    <img src="iconcube.png" alt=""/>
+                </div>
+                <div class="absolute icons icon-circle">
+                    <img src="iconcircle.png" alt=""/>
+                </div>
+                <div class="absolute icons icon-zigzag">
+                    <img src="iconzigzag.png" alt=""/>
+                </div>
+                <div class="absolute icons icon-plus">
+                    <img src="iconplus.png" alt=""/>
+                </div>
+                <div class="user-image">
+                    <img src="myimage.jpeg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section">
+        <h2 class="page-header">Projects</h2>
+        <div class="project-container">
+            <div class="project-card" id="project1"></div>
+            <div class="project-number">01</div>
+            <div class="project-content">
+                <div class="project-skills-container">
+
+                </div>
+                <h2 class="project-heading">Tint and Orange</h2>
+                <div class="project-subheading">It is a car modification company which 
+                            provide you sheets to protect your car from scratch</div>
+            </div>
+            <div class="btn-grp">
+                <button class="btn-pink btn-project">Read More</button>
+                <a href="">
+                    <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="">
+                    <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
